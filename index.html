@@ -5,8 +5,15 @@
         <title>CSS-Basics</title>
         <style>
             h1 {
-                color:red;
+                color: red;
+                border-style:  solid;
+                border-width: 1 px;
+                border-color: red;
             }
+            p.important {
+
+            }
+
             p{
                 color:blue;
             }
@@ -14,8 +21,28 @@
             body{
                 background-color: brown;
             }
-
-
+            .yellow-text {
+                color: rgba(0, 0, 255, .5);
+            }
+            .important:hover {
+                background-color:white;
+            }
+            a[href="https://www.google.com"]{
+                background-color: white;
+                padding: 1rem;
+            }
+            a[href="https://www.amazon.com"] {
+                background-color: white;
+            }
+            #lead-paragraph {
+                color: yellow;
+                font-weight: bold;
+            }
+            img {
+                border-style: dashed;
+                border-color: white;
+                border-width: 3 px;
+            }
 
 
         </style>
@@ -26,6 +53,12 @@
 <body>
     <h1>Welcome!</h1>
     <p>Everything is fine!</p>
+    <p class="important yellow-text">No really, the world is not filled with hopelessness and despair, I promise.</p>
+    <p id="lead-paragraph">The World is a happy and sensible place.</p>
+    <a href="https://www.google.com">Google Inc Search site page</a> <br><br>
+    <a href="https://www.amazon.com">Amazon Inc Shopping site page</a>
+    <img src="suzanne-depoe-2018.png" alt="Suzanne picture">
+
 </body>
 
 </html>
